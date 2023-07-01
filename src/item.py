@@ -18,7 +18,7 @@ class Item:
         self.quantity = quantity
         Item.all.append(self)
 
-    def calculate_total_price(self) -> float:
+    def calculate_total_price(self) -> float | int:
         """
         Рассчитывает общую стоимость конкретного товара в магазине.
 
